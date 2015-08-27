@@ -1,0 +1,23 @@
+<Main>:
+    data_label: data
+    text_input: text
+    orientation: 'vertical'
+
+    Label:
+        text: 'Hello World\n你好世界'
+        font_size: sp(40)
+    TextInput:
+        id: text
+        font_size: sp(18)
+        hint_text: 'Enter some text'
+        text: '请你输入一些文本'
+    Button:
+        text: 'Update'
+        on_press: root.update_data()
+    Label:
+        id: data
+        text: 'Hit the update button'
+
+<Widget>:
+    # font_name: 'fonts/RobotoCondensed-Regular.ttf'
+    font_name: 'fonts/NotoSansCJK-Regular.ttc'
